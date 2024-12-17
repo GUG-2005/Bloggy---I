@@ -1,0 +1,52 @@
+form {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 60px auto;
+  width: 80%; 
+}
+
+label {
+  font-size: 20px; 
+  padding: 10px 0;
+}
+
+form input, form textarea {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 40px;
+  width: 100%; 
+  margin-bottom: 15px; 
+  font-size: large;
+}
+
+#description {
+  height: 80px;
+}
+
+#blog {
+  height: 200px;
+}
+
+#submit {
+  align-self: center; /* Center the submit button */
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: gray;
+  color: black;
+}
+
+h1{
+  margin: 20px auto;
+}

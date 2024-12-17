@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<% if (t.length > 0) {%>
+  <% for (let i=0; i<t.length; i++) {%>
+    <h1 class="posts"><%= t[i] %></h1>
+    <h4 class="posts"><%= d[i] %></h4>
+    <p class="posts"><%= b[i] %></p>
+    <a class="posts" href="/edit?title=<%=encodeURIComponent(t[i])%>&description=<%=encodeURIComponent(d[i])%>&blog=<%=encodeURIComponent(b[i])%>">Edit Post </a>
+    <a class="posts" href="/delete?title=<%=encodeURIComponent(t[i])%>&description=<%=encodeURIComponent(d[i])%>&blog=<%=encodeURIComponent(b[i])%>">Delete Post </a>
+    <% } %>
+<% } else {%>
+  <center><h1>There are no posts in here!</h1></center>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<center><h1 class="com">Edit your Blog here!</h1></center> 
+<form action="/submit" method="post">
+  <label for="title" >Title: </label>
+  <input type="text" id="title" name="title" value=<%= ti %> placeholder="Enter your title" required>
+  <br>
+  <label for="description">Description: </label>
+  <input type="text" name="description" id="description" placeholder="Give Description" value=<%=de %> required>
+  <br>
+  <label for="blog">Content: </label>
+  <textarea name="blog" id="blog" placeholder="Write your blog here" required><%= bo %></textarea>
+  <br>
+  <input id="submit" type="submit" value="Publish">
+</form>
+
+
+<%- include("partials/footer.ejs") %>

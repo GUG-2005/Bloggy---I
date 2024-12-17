@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<center><h1 class="header">Welcome, to Bloggy!</h1></center>
+
+<a href="/compose" class="index c">Click here to compose a blog</a>
+
+<h1 class="index h1">Our posts</h1>
+<% if (t.length >0) { %>
+  <h2 class="index h2"><%= t[0] %></h2>
+  <h4 class="index h4"><%= d[0] %></h4>
+  <a href="/posts" class="index m">Click for more</a>
+
+  <h2 class="index h2"><%= t[1] %></h2>
+  <h4 class="index h4"><%= d[1] %></h4>
+  <a href="/posts" class="index m">Click for more</a>
+<a href="/posts" class="index p">For more Posts click here</a>
+<% } else { %>
+  <center><h2 name="index h2">Compose more blogs</h2></center>
+<% } %>
+<%- include("partials/footer.ejs") %>
